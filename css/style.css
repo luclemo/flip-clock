@@ -159,7 +159,7 @@ input::-moz-focus-inner {
   box-sizing: border-box;
 }
 html {
-  font-size: 12px;
+  font-size: 10px;
 }
 @media screen and (max-width: 1020px) {
   html {
@@ -199,24 +199,21 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .clock {
   width: 100%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (max-width: 1020px) {
   .clock {
@@ -235,9 +232,8 @@ body {
 }
 .number-box {
   text-align: center;
-  min-width: 40%;
+  width: 30%;
   padding: 3rem 0 6rem 0;
-  margin-right: 2%;
   border-radius: 10px;
   background: #161616;
   position: relative;
@@ -325,7 +321,7 @@ body {
   }
 }
 .pm {
-  top: 336px;
+  top: 290px;
   left: 20px;
 }
 @media screen and (max-width: 1020px) {

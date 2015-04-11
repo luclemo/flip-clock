@@ -1,7 +1,7 @@
 @import "_reset"
 
 html
-	font-size 12px
+	font-size 10px
 	
 	@media screen and (max-width: 1020px)
 		font-size 9px
@@ -29,14 +29,13 @@ body
 	height 100vh
 	margin 0 auto
 	display flex
-	justify-content center
-	align-items center
 
 .clock
 	width 100%
 	display flex
-	justify-content center
+	flex-direction row
 	align-items center
+	justify-content space-between
 		
 	@media screen and (max-width: 1020px)
 		width 80%
@@ -53,9 +52,9 @@ body
 	
 .number-box
 	text-align center
-	min-width 40%
+	width 30%
 	padding 3rem 0 6rem 0
-	margin-right 2%
+	// margin-right 2%
 	border-radius 10px
 	background: rgba(22, 22, 22, 1)
 	position relative
@@ -130,7 +129,7 @@ body
 		left 7px
 
 .pm
-	top 336px
+	top 290px
 	left 20px
 	
 	@media screen and (max-width: 1020px)
