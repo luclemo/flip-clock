@@ -9,15 +9,16 @@ gulp.task( 'styles', function() {
 		.pipe(autoprefixer({
 				browsers: ['last 2 versions']
 			}))
-		.pipe( gulp.dest( 'css/style.css' ) )
+		.pipe( gulp.dest( 'css' ) )
 });
 
-gulp.task( 'jade', function() {
+gulp.task( 'templates', function() {
 	gulp.src( 'jade/index.jade' )
 		.pipe( jade() )
-		.pipe( gulp.dest( 'index.html' ) )
+		.pipe( gulp.dest( '' ) )
 });
 
-gulp.task( 'watch', function() {
-	gulp.watch( 'stylus/*.stylus', ['stylus'] );
+gulp.task( 'watch', function() { 
+	gulp.watch( 'stylus/*.styl', ['styles'] );
+	gulp.watch( 'jade/index.jade', ['templates'] );
 });
