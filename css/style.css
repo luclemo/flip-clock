@@ -235,8 +235,8 @@ body {
 }
 .number-box {
   text-align: center;
-  width: 40%;
-  padding: 3rem 2rem 6rem 2rem;
+  min-width: 40%;
+  padding: 3rem 0 6rem 0;
   margin-right: 2%;
   border-radius: 10px;
   background: #161616;
@@ -311,7 +311,7 @@ body {
 }
 .am {
   top: -10px;
-  left: 0px;
+  left: 20px;
 }
 @media screen and (max-width: 760px) {
   .am {
@@ -326,7 +326,7 @@ body {
 }
 .pm {
   top: 336px;
-  left: 0px;
+  left: 20px;
 }
 @media screen and (max-width: 1020px) {
   .pm {
