@@ -12,5 +12,10 @@
     "gulp-autoprefixer": "^2.1.0",
     "gulp-jade": "^1.0.0",
     "gulp-stylus": "^2.0.1"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-stylus": "^2.0.1",
+    "gulp-jade": "^1.0.0"
   }
 }
